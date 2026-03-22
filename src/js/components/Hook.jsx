@@ -18,10 +18,10 @@ export const Hook = () => {
     return (
         <>
 
-            <div className="container px-4 text-center">
-                <div className="row gx-5">
+            <div className="container text-center bg-dark main">
+                <div className="row">
                     <div className="col">
-                        <div className="p-3"><button
+                        <div className><button
                             className={"btn btn-danger " + (sombra === "btn1" ? "sombra-amarilla" : "")}
                             onClick={() => conSombra("btn1")}
                         >
@@ -29,14 +29,14 @@ export const Hook = () => {
                         </div>
                     </div>
                     <div clasNames="col">
-                        <div className="p-3"><button
+                        <div className><button
                             className={"btn btn-warning " + (sombra === "btn2" ? "sombra-amarilla" : "")}
                             onClick={() => conSombra("btn2")}
                         >
                         </button></div>
                     </div>
                     <div className="col">
-                        <div className="p-3"> <button
+                        <div className> <button
                             className={"btn btn-success " + (sombra === "btn3" ? "sombra-amarilla" : "")}
                             onClick={() => conSombra("btn3")}
                         >
