@@ -1,17 +1,16 @@
-import React, { useState, useEffect, useContext } from "react"; //primer paso: importar el estado 
-
+import React, { useState, useEffect, useContext } from "react"; 
 
 export const Hook = () => {
 
-    // guardamos qué botón tiene sombra
+    
     const [sombra, setSombra] = useState("");
 
     const conSombra = (boton) => {
 
         if (sombra === boton) {
-            setSombra(""); // quitar sombra si ya estaba
+            setSombra("");
         } else {
-            setSombra(boton); // poner sombra a ese botón
+            setSombra(boton); git 
         }
     };
 
