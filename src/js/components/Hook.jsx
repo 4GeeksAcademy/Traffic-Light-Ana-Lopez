@@ -17,12 +17,9 @@ export const Hook = () => {
 
     return (
         <>
-            <div className="container text-center bg-dark main p-3 hang">
-                <span>
-
-                </span>
+            <div className="text-center bg-dark hang">
             </div>
-            <div className="container text-center bg-dark main p-3">
+            <div className="container text-center bg-dark main p-3 rounded-3">
                 <div className="row">
                     <div className="col p-2">
                         <div className><button

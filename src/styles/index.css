@@ -17,8 +17,10 @@
   
 }
 
-.hang{
-  width: 1px;
-  height:100px;
+.hang {
+  width: 10px;
+  height: 100px;
+  background-color: #212529;
+  margin: 0 auto;
 }
 
