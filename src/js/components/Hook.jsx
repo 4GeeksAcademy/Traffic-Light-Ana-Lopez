@@ -17,28 +17,35 @@ export const Hook = () => {
 
     return (
         <>
+            <div className="container text-center bg-dark main p-3 hang">
+                <span>
 
-            <div className="container text-center bg-dark main">
+                </span>
+            </div>
+            <div className="container text-center bg-dark main p-3">
                 <div className="row">
-                    <div className="col">
+                    <div className="col p-2">
                         <div className><button
-                            className={"btn btn-danger " + (sombra === "btn1" ? "sombra-amarilla" : "")}
+                            className={"btn btn-danger rounded-circle "  + (sombra === "btn1" ? "sombra-amarilla" : "")}
                             onClick={() => conSombra("btn1")}
+                            style={{ width: "80px", height: "80px" }}
                         >
                         </button>
                         </div>
                     </div>
-                    <div clasNames="col">
+                    <div clasNames="col p-2">
                         <div className><button
-                            className={"btn btn-warning " + (sombra === "btn2" ? "sombra-amarilla" : "")}
+                            className={"btn btn-warning rounded-circle " + (sombra === "btn2" ? "sombra-amarilla" : "")}
                             onClick={() => conSombra("btn2")}
+                            style={{ width: "80px", height: "80px" }}
                         >
                         </button></div>
                     </div>
-                    <div className="col">
+                    <div className="col p-2">
                         <div className> <button
-                            className={"btn btn-success " + (sombra === "btn3" ? "sombra-amarilla" : "")}
+                            className={"btn btn-success rounded-circle " + (sombra === "btn3" ? "sombra-amarilla" : "")}
                             onClick={() => conSombra("btn3")}
+                            style={{ width: "80px", height: "80px" }}
                         >
                         </button>
                         </div>
