@@ -1,19 +1,31 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, { useState, useEffect, useContext } from "react"; //primer paso: importar el estado 
 
-const Hook = () => {
+export const Hook = () => {
 
+    // estado para la sombra
+    const [sombra, setSombra] = useState("");
 
+    const conSombra = () => {
 
+        // si NO tiene sombra → se la añadimos
+        if (sombra === "") {
+            setSombra("sombra-amarilla");
+        } else {
+            // si ya tiene sombra → se la quitamos
+            setSombra("");
+        }
+    };
 
-
-
-    return(
-
+    return (
         <>
-        
-        
-        </>
-    )
-}
+            <h2>Botón con sombra</h2>
 
-export default Hook;
+            <button 
+                className={"btn btn-success " + sombra} 
+                onClick={conSombra}
+            >
+                Click me
+            </button>
+        </>
+    );
+};
